@@ -15,6 +15,7 @@ brew 'spark'
 brew 'unrar'
 brew 'wget'
 brew 'youtube-dl'
+brew 'zsh'
 
 cask 'adobe-creative-cloud'
 cask 'docker'
