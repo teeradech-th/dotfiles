@@ -70,3 +70,12 @@ precmd() {
   title "zsh" "%m" "%55<...<%~"
   set_prompt
 }
+
+gitkraken() {
+	if [ "$1" != "" ]
+    then
+		/Applications/GitKraken.app/Contents/MacOS/GitKraken -p $1 1>/dev/null &
+	else
+		/Applications/GitKraken.app/Contents/MacOS/GitKraken -p . 1>/dev/null &
+	fi
+}
