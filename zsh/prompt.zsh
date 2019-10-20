@@ -79,3 +79,12 @@ gitkraken() {
 		/Applications/GitKraken.app/Contents/MacOS/GitKraken -p . 1>/dev/null &
 	fi
 }
+
+kraken() {
+	if [ "$1" != "" ]
+    then
+		/Applications/GitKraken.app/Contents/MacOS/GitKraken -p $1 1>/dev/null &
+	else
+		/Applications/GitKraken.app/Contents/MacOS/GitKraken -p . 1>/dev/null &
+	fi
+}
